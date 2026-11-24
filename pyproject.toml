@@ -1,0 +1,65 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dxf-takeoff"
+version = "0.1.0"
+description = "Quantity takeoff from DXF drawings: total length by layer, areas of polylines and hatches, block counts by attribute, and a priced BOQ/MTO to Excel, CSV or JSON. No AutoCAD needed."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "Shahnawaz75" }]
+keywords = [
+    "dxf", "quantity-takeoff", "takeoff", "boq", "bill-of-quantities", "mto",
+    "material-takeoff", "estimating", "quantity-surveying", "cad", "autocad",
+    "ezdxf", "piping", "mep", "area", "length", "block-count", "excel",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Manufacturing",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Multimedia :: Graphics :: Graphics Conversion",
+    "Topic :: Office/Business :: Financial :: Spreadsheet",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed",
+]
+dependencies = [
+    "ezdxf>=1.1",
+    "tomli>=1.1; python_version < '3.11'",
+]
+
+[project.optional-dependencies]
+xlsx = ["openpyxl>=3.1"]
+test = ["pytest>=7", "openpyxl>=3.1"]
+docs = ["matplotlib>=3.6"]
+
+[project.scripts]
+dxf-takeoff = "dxf_takeoff.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Shahnawaz75/dxf-takeoff"
+Documentation = "https://shahnawaz75.github.io/dxf-takeoff/"
+Issues = "https://github.com/Shahnawaz75/dxf-takeoff/issues"
+Changelog = "https://github.com/Shahnawaz75/dxf-takeoff/blob/main/CHANGELOG.md"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dxf_takeoff"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "examples", "docs/*.md", "README.md", "LICENSE", "CHANGELOG.md", "CONTRIBUTING.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
