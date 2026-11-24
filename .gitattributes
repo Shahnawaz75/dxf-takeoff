@@ -1,0 +1,4 @@
+# Normalise line endings in the repository; binary outputs stay untouched.
+* text=auto
+*.png binary
+*.xlsx binary

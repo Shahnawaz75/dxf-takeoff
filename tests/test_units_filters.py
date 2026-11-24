@@ -75,6 +75,7 @@ def test_frozen_and_off_layers_are_skipped_unless_requested(doc):
     assert [r.layer for r in result.lengths] == ["ON"]
     assert any("2 entities on frozen or off layers" in n for n in result.notes)
     assert [r.layer for r in takeoff(doc, include_hidden=True).lengths] == ["FROZEN", "OFF", "ON"]
+    assert not any("frozen" in n for n in takeoff(doc, layers=["ON"]).notes)  # filtered out anyway
 
 
 def test_block_on_frozen_layer_hides_content_off_layer_hides_layer_zero_only(doc):

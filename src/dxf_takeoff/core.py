@@ -155,10 +155,10 @@ def takeoff(
     for entity, props in walker.walk(space):
         kind = entity.dxftype()
         measurable = kind in CURVE_TYPES or kind in FILL_TYPES or kind == "INSERT"
-        if props.hidden and not include_hidden:
-            hidden += measurable
-            continue
         if (include and not match_any(props.layer, include)) or match_any(props.layer, exclude):
+            continue
+        if props.hidden and not include_hidden:
+            hidden += measurable  # reported in the notes
             continue
         if kind == "INSERT":
             if props.depth == 0 or nested:

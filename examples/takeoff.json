@@ -11,6 +11,7 @@
     "scale": 1.0
   },
   "group_by": "layer",
+  "spline_method": "flattened, max deviation 1e-6 x spline size",
   "lengths": [
     {
       "layer": "A-PUMPROOM",

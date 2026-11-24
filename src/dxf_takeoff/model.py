@@ -192,6 +192,7 @@ class TakeoffResult:
                 "scale": self.scale,
             },
             "group_by": self.group_by,
+            "spline_method": self.spline_method or None,
             "lengths": lengths,
             "areas": [
                 {"layer": r.layer, "shapes": r.shapes, "area": r.area, "perimeter": r.perimeter,
