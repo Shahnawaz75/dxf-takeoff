@@ -1,0 +1,19 @@
+code,description,quantity,unit,net,waste_pct,gross,rate,amount
+1.01,"CS pipe DN200 SCH40 A106-B, product lines",length,m,109.027433,5.0,114.478805,95.0,10875.49
+1.02,"CS pipe DN150 SCH40 A106-B, product lines",length,m,38.810288,5.0,40.750802,68.0,2771.05
+1.03,"CS pipe DN100, cooling water header",length,m,14.500000,5.0,15.225000,41.0,624.23
+1.04,"CS pipe DN50, cooling water branches",length,m,13.703429,7.5,14.731186,22.5,331.45
+1.05,"HDPE pipe DN150 PN16, fire water ring main",length,m,177.415927,3.0,182.738404,38.0,6944.06
+1.06,Open drain channel 300 mm wide,length,m,13.625281,0.0,13.625281,55.0,749.39
+2.01,Gate valve DN200 Class 150,count,nr,4.000000,0.0,4.000000,1450.0,5800.00
+2.02,Gate valve DN150 Class 150,count,nr,2.000000,0.0,2.000000,980.0,1960.00
+2.03,Swing check valve DN150 Class 150,count,nr,3.000000,0.0,3.000000,860.0,2580.00
+2.04,Ball valve DN50,count,nr,3.000000,0.0,3.000000,145.0,435.00
+2.05,Butterfly valve DN100 (dynamic block),count,nr,2.000000,0.0,2.000000,410.0,820.00
+2.06,"Fire hydrant, double outlet",count,nr,4.000000,0.0,4.000000,1250.0,5000.00
+2.07,Pipe sleeper / support,count,nr,9.000000,0.0,9.000000,120.0,1080.00
+3.01,"Bund wall, RC 200 thick x 1.2 m high",length,m,160.566371,0.0,160.566371,310.0,49775.57
+3.02,"Bund floor, epoxy coating (net of tank pads)",area,m2,1238.424808,10.0,1362.267289,18.5,25201.94
+3.03,Tank foundation ring beam,perimeter,m,113.097336,0.0,113.097336,240.0,27143.36
+3.04,Pump room floor screed 75 mm,area,m2,120.000000,5.0,126.000000,24.0,3024.00
+3.05,Pump room blockwork wall 200 mm,length,m,44.000000,0.0,44.000000,85.0,3740.00

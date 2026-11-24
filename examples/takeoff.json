@@ -1,0 +1,473 @@
+{
+  "tool": "dxf-takeoff",
+  "version": "0.1.0",
+  "file": "tank_farm.dxf",
+  "layout": "Model",
+  "units": {
+    "insunits": 4,
+    "drawing": "mm",
+    "length": "m",
+    "area": "m2",
+    "scale": 1.0
+  },
+  "group_by": "layer",
+  "lengths": [
+    {
+      "layer": "A-PUMPROOM",
+      "entities": 1,
+      "length": 44.0,
+      "approximate": false,
+      "types": {
+        "LWPOLYLINE": 1
+      }
+    },
+    {
+      "layer": "C-DIKE-WALL",
+      "entities": 1,
+      "length": 160.5663706143592,
+      "approximate": false,
+      "types": {
+        "LWPOLYLINE": 1
+      }
+    },
+    {
+      "layer": "EQUIP-TANK",
+      "entities": 3,
+      "length": 113.09733552923255,
+      "approximate": false,
+      "types": {
+        "CIRCLE": 3
+      }
+    },
+    {
+      "layer": "P-CW-50",
+      "entities": 3,
+      "length": 13.703429173528852,
+      "approximate": false,
+      "types": {
+        "LWPOLYLINE": 3
+      }
+    },
+    {
+      "layer": "P-CW-100",
+      "entities": 1,
+      "length": 14.5,
+      "approximate": false,
+      "types": {
+        "LWPOLYLINE": 1
+      }
+    },
+    {
+      "layer": "P-DRAIN",
+      "entities": 1,
+      "length": 13.625280916215885,
+      "approximate": true,
+      "types": {
+        "SPLINE": 1
+      }
+    },
+    {
+      "layer": "P-FW-150",
+      "entities": 1,
+      "length": 177.41592653589794,
+      "approximate": false,
+      "types": {
+        "LWPOLYLINE": 1
+      }
+    },
+    {
+      "layer": "P-PROD-150",
+      "entities": 4,
+      "length": 38.810287520586556,
+      "approximate": false,
+      "types": {
+        "LWPOLYLINE": 4
+      }
+    },
+    {
+      "layer": "P-PROD-200",
+      "entities": 3,
+      "length": 109.02743338823082,
+      "approximate": false,
+      "types": {
+        "LWPOLYLINE": 3
+      }
+    },
+    {
+      "layer": "SYMBOL",
+      "entities": 54,
+      "length": 79.45841982305065,
+      "approximate": false,
+      "types": {
+        "CIRCLE": 12,
+        "LINE": 21,
+        "LWPOLYLINE": 21
+      }
+    }
+  ],
+  "areas": [
+    {
+      "layer": "A-FLOOR",
+      "shapes": 1,
+      "area": 120.0,
+      "perimeter": 44.0,
+      "approximate": false,
+      "types": {
+        "HATCH": 1
+      }
+    },
+    {
+      "layer": "A-PUMPROOM",
+      "shapes": 1,
+      "area": 120.0,
+      "perimeter": 44.0,
+      "approximate": false,
+      "types": {
+        "LWPOLYLINE": 1
+      }
+    },
+    {
+      "layer": "C-DIKE-FLOOR",
+      "shapes": 1,
+      "area": 1238.4248081051226,
+      "perimeter": 273.66370614359175,
+      "approximate": false,
+      "types": {
+        "HATCH": 1
+      }
+    },
+    {
+      "layer": "C-DIKE-WALL",
+      "shapes": 1,
+      "area": 1596.5663706143591,
+      "perimeter": 160.5663706143592,
+      "approximate": false,
+      "types": {
+        "LWPOLYLINE": 1
+      }
+    },
+    {
+      "layer": "EQUIP-TANK",
+      "shapes": 3,
+      "area": 358.1415625092364,
+      "perimeter": 113.09733552923255,
+      "approximate": false,
+      "types": {
+        "CIRCLE": 3
+      }
+    },
+    {
+      "layer": "SYMBOL",
+      "shapes": 33,
+      "area": 7.271251735068219,
+      "perimeter": 51.95841982305065,
+      "approximate": false,
+      "types": {
+        "CIRCLE": 12,
+        "LWPOLYLINE": 21
+      }
+    }
+  ],
+  "blocks": [
+    {
+      "block": "BALL-VALVE",
+      "attribs": {
+        "SIZE": "50"
+      },
+      "count": 3,
+      "nested": 0
+    },
+    {
+      "block": "BUTTERFLY-VALVE",
+      "attribs": {
+        "SIZE": "100"
+      },
+      "count": 2,
+      "nested": 0
+    },
+    {
+      "block": "CHECK-VALVE",
+      "attribs": {
+        "SIZE": "150"
+      },
+      "count": 3,
+      "nested": 0
+    },
+    {
+      "block": "GATE-VALVE",
+      "attribs": {
+        "SIZE": "150"
+      },
+      "count": 2,
+      "nested": 0
+    },
+    {
+      "block": "GATE-VALVE",
+      "attribs": {
+        "SIZE": "200"
+      },
+      "count": 4,
+      "nested": 0
+    },
+    {
+      "block": "HYDRANT",
+      "attribs": {
+        "SIZE": ""
+      },
+      "count": 4,
+      "nested": 0
+    },
+    {
+      "block": "PIPE-SUPPORT",
+      "attribs": {
+        "SIZE": ""
+      },
+      "count": 9,
+      "nested": 0
+    },
+    {
+      "block": "PUMP",
+      "attribs": {
+        "SIZE": ""
+      },
+      "count": 3,
+      "nested": 0
+    }
+  ],
+  "totals": {
+    "length": 764.2044835011025,
+    "area": 3440.403992963786,
+    "blocks": 30
+  },
+  "boq": {
+    "title": "Tank farm T-100: piping and civil works",
+    "currency": "USD",
+    "items": [
+      {
+        "code": "1.01",
+        "description": "CS pipe DN200 SCH40 A106-B, product lines",
+        "quantity": "length",
+        "net": 109.02743338823082,
+        "unit": "m",
+        "waste": 5.0,
+        "gross": 114.47880505764236,
+        "rate": 95.0,
+        "amount": 10875.486480476024,
+        "matched": 3
+      },
+      {
+        "code": "1.02",
+        "description": "CS pipe DN150 SCH40 A106-B, product lines",
+        "quantity": "length",
+        "net": 38.810287520586556,
+        "unit": "m",
+        "waste": 5.0,
+        "gross": 40.75080189661588,
+        "rate": 68.0,
+        "amount": 2771.0545289698803,
+        "matched": 4
+      },
+      {
+        "code": "1.03",
+        "description": "CS pipe DN100, cooling water header",
+        "quantity": "length",
+        "net": 14.5,
+        "unit": "m",
+        "waste": 5.0,
+        "gross": 15.225000000000001,
+        "rate": 41.0,
+        "amount": 624.225,
+        "matched": 1
+      },
+      {
+        "code": "1.04",
+        "description": "CS pipe DN50, cooling water branches",
+        "quantity": "length",
+        "net": 13.703429173528852,
+        "unit": "m",
+        "waste": 7.5,
+        "gross": 14.731186361543514,
+        "rate": 22.5,
+        "amount": 331.45169313472906,
+        "matched": 3
+      },
+      {
+        "code": "1.05",
+        "description": "HDPE pipe DN150 PN16, fire water ring main",
+        "quantity": "length",
+        "net": 177.41592653589794,
+        "unit": "m",
+        "waste": 3.0,
+        "gross": 182.7384043319749,
+        "rate": 38.0,
+        "amount": 6944.0593646150455,
+        "matched": 1
+      },
+      {
+        "code": "1.06",
+        "description": "Open drain channel 300 mm wide",
+        "quantity": "length",
+        "net": 13.625280916215885,
+        "unit": "m",
+        "waste": 0.0,
+        "gross": 13.625280916215885,
+        "rate": 55.0,
+        "amount": 749.3904503918737,
+        "matched": 1
+      },
+      {
+        "code": "2.01",
+        "description": "Gate valve DN200 Class 150",
+        "quantity": "count",
+        "net": 4.0,
+        "unit": "nr",
+        "waste": 0.0,
+        "gross": 4.0,
+        "rate": 1450.0,
+        "amount": 5800.0,
+        "matched": 4
+      },
+      {
+        "code": "2.02",
+        "description": "Gate valve DN150 Class 150",
+        "quantity": "count",
+        "net": 2.0,
+        "unit": "nr",
+        "waste": 0.0,
+        "gross": 2.0,
+        "rate": 980.0,
+        "amount": 1960.0,
+        "matched": 2
+      },
+      {
+        "code": "2.03",
+        "description": "Swing check valve DN150 Class 150",
+        "quantity": "count",
+        "net": 3.0,
+        "unit": "nr",
+        "waste": 0.0,
+        "gross": 3.0,
+        "rate": 860.0,
+        "amount": 2580.0,
+        "matched": 3
+      },
+      {
+        "code": "2.04",
+        "description": "Ball valve DN50",
+        "quantity": "count",
+        "net": 3.0,
+        "unit": "nr",
+        "waste": 0.0,
+        "gross": 3.0,
+        "rate": 145.0,
+        "amount": 435.0,
+        "matched": 3
+      },
+      {
+        "code": "2.05",
+        "description": "Butterfly valve DN100 (dynamic block)",
+        "quantity": "count",
+        "net": 2.0,
+        "unit": "nr",
+        "waste": 0.0,
+        "gross": 2.0,
+        "rate": 410.0,
+        "amount": 820.0,
+        "matched": 2
+      },
+      {
+        "code": "2.06",
+        "description": "Fire hydrant, double outlet",
+        "quantity": "count",
+        "net": 4.0,
+        "unit": "nr",
+        "waste": 0.0,
+        "gross": 4.0,
+        "rate": 1250.0,
+        "amount": 5000.0,
+        "matched": 4
+      },
+      {
+        "code": "2.07",
+        "description": "Pipe sleeper / support",
+        "quantity": "count",
+        "net": 9.0,
+        "unit": "nr",
+        "waste": 0.0,
+        "gross": 9.0,
+        "rate": 120.0,
+        "amount": 1080.0,
+        "matched": 9
+      },
+      {
+        "code": "3.01",
+        "description": "Bund wall, RC 200 thick x 1.2 m high",
+        "quantity": "length",
+        "net": 160.5663706143592,
+        "unit": "m",
+        "waste": 0.0,
+        "gross": 160.5663706143592,
+        "rate": 310.0,
+        "amount": 49775.574890451346,
+        "matched": 1
+      },
+      {
+        "code": "3.02",
+        "description": "Bund floor, epoxy coating (net of tank pads)",
+        "quantity": "area",
+        "net": 1238.4248081051226,
+        "unit": "m2",
+        "waste": 10.0,
+        "gross": 1362.267288915635,
+        "rate": 18.5,
+        "amount": 25201.944844939248,
+        "matched": 1
+      },
+      {
+        "code": "3.03",
+        "description": "Tank foundation ring beam",
+        "quantity": "perimeter",
+        "net": 113.09733552923255,
+        "unit": "m",
+        "waste": 0.0,
+        "gross": 113.09733552923255,
+        "rate": 240.0,
+        "amount": 27143.36052701581,
+        "matched": 3
+      },
+      {
+        "code": "3.04",
+        "description": "Pump room floor screed 75 mm",
+        "quantity": "area",
+        "net": 120.0,
+        "unit": "m2",
+        "waste": 5.0,
+        "gross": 126.0,
+        "rate": 24.0,
+        "amount": 3024.0,
+        "matched": 1
+      },
+      {
+        "code": "3.05",
+        "description": "Pump room blockwork wall 200 mm",
+        "quantity": "length",
+        "net": 44.0,
+        "unit": "m",
+        "waste": 0.0,
+        "gross": 44.0,
+        "rate": 85.0,
+        "amount": 3740.0,
+        "matched": 1
+      }
+    ],
+    "total": 148855.54777999397,
+    "not_in_boq": [
+      "layers SYMBOL",
+      "blocks PUMP x3"
+    ]
+  },
+  "notes": [
+    "1 entity with splines measured by flattening (max deviation 1e-6 x spline size); rows marked ~ are approximate.",
+    "1 entity on frozen or off layers skipped (use --include-hidden to include them)."
+  ]
+}

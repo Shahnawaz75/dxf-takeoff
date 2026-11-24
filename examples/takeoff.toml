@@ -1,0 +1,167 @@
+# BOQ rules for examples/tank_farm.dxf
+#
+#   dxf-takeoff examples/tank_farm.dxf --out-units m --group-by-attrib SIZE --rules examples/takeoff.toml
+#
+# Each [[item]] becomes one BOQ line. Layer and block patterns accept wildcards
+# (* ? [abc]) and are case-insensitive. Quantities are converted to `unit`.
+# The rates below are ILLUSTRATIVE ONLY - replace them with your own.
+
+[settings]
+title = "Tank farm T-100: piping and civil works"
+currency = "USD"
+
+# --- 1. Piping (lengths along the centreline, bends included) --------------
+[[item]]
+code = "1.01"
+description = "CS pipe DN200 SCH40 A106-B, product lines"
+match_layer = "P-PROD-200"
+quantity = "length"
+unit = "m"
+waste = 5
+rate = 95.00
+
+[[item]]
+code = "1.02"
+description = "CS pipe DN150 SCH40 A106-B, product lines"
+match_layer = "P-PROD-150"
+quantity = "length"
+unit = "m"
+waste = 5
+rate = 68.00
+
+[[item]]
+code = "1.03"
+description = "CS pipe DN100, cooling water header"
+match_layer = "P-CW-100"
+quantity = "length"
+unit = "m"
+waste = 5
+rate = 41.00
+
+[[item]]
+code = "1.04"
+description = "CS pipe DN50, cooling water branches"
+match_layer = "P-CW-50"
+quantity = "length"
+unit = "m"
+waste = 7.5
+rate = 22.50
+
+[[item]]
+code = "1.05"
+description = "HDPE pipe DN150 PN16, fire water ring main"
+match_layer = "P-FW-150"
+quantity = "length"
+unit = "m"
+waste = 3
+rate = 38.00
+
+[[item]]
+code = "1.06"
+description = "Open drain channel 300 mm wide"
+match_layer = "P-DRAIN"
+quantity = "length"
+unit = "m"
+rate = 55.00
+
+# --- 2. Valves and fittings (block counts, split by the SIZE attribute) -----
+[[item]]
+code = "2.01"
+description = "Gate valve DN200 Class 150"
+match_block = "GATE-VALVE"
+where = { SIZE = "200" }
+quantity = "count"
+unit = "nr"
+rate = 1450.00
+
+[[item]]
+code = "2.02"
+description = "Gate valve DN150 Class 150"
+match_block = "GATE-VALVE"
+where = { SIZE = "150" }
+quantity = "count"
+unit = "nr"
+rate = 980.00
+
+[[item]]
+code = "2.03"
+description = "Swing check valve DN150 Class 150"
+match_block = "CHECK-VALVE"
+quantity = "count"
+unit = "nr"
+rate = 860.00
+
+[[item]]
+code = "2.04"
+description = "Ball valve DN50"
+match_block = "BALL-VALVE"
+quantity = "count"
+unit = "nr"
+rate = 145.00
+
+[[item]]
+code = "2.05"
+description = "Butterfly valve DN100 (dynamic block)"
+match_block = "BUTTERFLY-VALVE"
+quantity = "count"
+unit = "nr"
+rate = 410.00
+
+[[item]]
+code = "2.06"
+description = "Fire hydrant, double outlet"
+match_block = "HYDRANT"
+quantity = "count"
+unit = "nr"
+rate = 1250.00
+
+[[item]]
+code = "2.07"
+description = "Pipe sleeper / support"
+match_block = "PIPE-SUPPORT"
+quantity = "count"
+unit = "nr"
+rate = 120.00
+
+# --- 3. Civil (areas from hatches, lengths and perimeters) ------------------
+[[item]]
+code = "3.01"
+description = "Bund wall, RC 200 thick x 1.2 m high"
+match_layer = "C-DIKE-WALL"
+quantity = "length"
+unit = "m"
+rate = 310.00
+
+[[item]]
+code = "3.02"
+description = "Bund floor, epoxy coating (net of tank pads)"
+match_layer = "C-DIKE-FLOOR"
+quantity = "area"
+unit = "m2"
+waste = 10
+rate = 18.50
+
+[[item]]
+code = "3.03"
+description = "Tank foundation ring beam"
+match_layer = "EQUIP-TANK"
+quantity = "perimeter"
+unit = "m"
+rate = 240.00
+
+[[item]]
+code = "3.04"
+description = "Pump room floor screed 75 mm"
+match_layer = "A-FLOOR"
+quantity = "area"
+unit = "m2"
+waste = 5
+rate = 24.00
+
+[[item]]
+code = "3.05"
+description = "Pump room blockwork wall 200 mm"
+match_layer = "A-PUMPROOM"
+quantity = "length"
+unit = "m"
+rate = 85.00
