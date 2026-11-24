@@ -1,0 +1,7 @@
+title: dxf-takeoff
+description: Quantity takeoff from DXF drawings - lengths by layer, areas, block counts and a priced BOQ in Excel.
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
